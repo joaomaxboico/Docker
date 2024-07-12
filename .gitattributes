@@ -1,0 +1,6 @@
+# Configure os finais de linha para todos os arquivos de texto
+* text=auto
+
+# Arquivos específicos podem ser configurados de forma explícita
+*.sh text eol=lf
+*.bat text eol=crlf

@@ -1,0 +1,14 @@
+Criado arquivo docker-compose.yml
+
+version: '3'
+services: 
+  db:
+    image: postgres:9.6
+    environment:
+            - POSTGRES_PASSWORD="postgres"
+
+docker-compose up -d
+
+docker-compose exec db psql -U postgres -c '\l'
+
+docker-compose down
